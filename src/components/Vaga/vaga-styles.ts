@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Vaga = styled.div`
+export const Vagas = styled.div`
   border: 1px solid var(--cor-principal);
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
