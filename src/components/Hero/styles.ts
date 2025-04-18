@@ -8,33 +8,34 @@ export const Form = styled.form`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  ::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${(props) => props.theme.corPrincipal};
+    background-color: var(--cor-principal);
     content: '';
     opacity: 0.7;
   }
 
-  div {
-    position: relative;
-    color: ${(props) => props.theme.CorTextoHero};
-    font-family: Gloock, serif;
-    font-size: 28px;
-  }
-
   @media (max-width: 768px) {
-    height: auto;
-    padding: 24px 0;
+    .form {
+      height: auto;
+      padding: 24px 0;
+    }
 
-    div {
+    .heroTitle {
       font-size: 32px;
     }
   }
+`
+
+export const Container = styled.div`
+  position: relative;
+  color: #eee;
 `
 
 export const HeroTitle = styled.h2`

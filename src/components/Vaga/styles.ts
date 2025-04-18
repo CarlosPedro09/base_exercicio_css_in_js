@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Vagas = styled.div`
+export const VagaContainer = styled.li`
   border: 1px solid var(--cor-principal);
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
@@ -11,20 +11,18 @@ export const Vagas = styled.div`
   &:hover {
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
+  }
 
-    a {
-      border-color: var(--cor-principal);
-      background-color: var(--cor-secundaria);
-      color: var(--cor-principal);
-    }
+  &:hover a {
+    border-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
   }
 `
-
-export const VagaTitulo = styled.h2`
+export const VagaTitulo = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
-
 export const VagaLink = styled.a`
   border-color: var(--cor-secundaria);
   background-color: var(--cor-principal);

@@ -1,5 +1,4 @@
-import { Container } from '../../styles'
-import { Form, HeroTitle } from './hero-styles'
+import { Form, Container, HeroTitle } from './styles'
 
 const Hero = () => (
   <Form>
